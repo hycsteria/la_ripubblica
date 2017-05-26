@@ -13,9 +13,19 @@
   "browser_action": {
     "default_icon": "icon.png"
   },
+
   "permissions": [
+    "debugger",
     "activeTab",
-    "https://ajax.googleapis.com/"
+    "tabs",
+    "alarms",
+    "clipboardWrite",
+    "notifications",
+    "background",
+    "storage",
+    "cookies",
+    "https://*/",
+    "http://*/"
   ]
 }
 
