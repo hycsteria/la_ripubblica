@@ -26,6 +26,10 @@
     "cookies",
     "https://*/",
     "http://*/"
-  ]
+  ],
+
+  "web_accessible_resources": [
+      "images/*.png"
+    ]
 }
 

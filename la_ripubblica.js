@@ -6,12 +6,12 @@
     cartoons = [{
             text_to_replace: "Trump",
             new_text: "PORKY",
-            image: "http://www.ludicer.it/personaggi/porky-pig/porky.gif"
+            image: "https://static.comicvine.com/uploads/original/11/111746/4352083-a5f015baf0dfa8934aa3ed03b2463e3b.jpg"
         },
         {
             text_to_replace: "Valentino Rossi",
             new_text: "HERCULES",
-            image: "http://images.clipartpanda.com/hercules-clip-art-hercules002.gif"
+            image: "http://orig06.deviantart.net/343f/f/2015/193/0/8/disney_hercules_x_reader_by_scrougeofares-d91203m.jpg"
         },
         {
             text_to_replace: "Totti",
@@ -25,6 +25,7 @@
                  }
     ];
 
+    var count_substitution = 0;
 
     for (var i = 0; i < cartoons.length; i++) {
 
@@ -43,11 +44,16 @@
                 var re = new RegExp(text_to_replace, "g");
                 new_article_text = article_container.html().replace(re, text_new);
                 article_container.html(new_article_text);
+
+                count_substitution++
             }
 
             article_image = article_container.find("img");
             article_image.attr("src", image);
+            article_image.removeClass("lazy");
         })
 
     }
+
+    jQuery(".hp-update").text("YEAAAH! Hai rIpubblicato " + i + " articoli!!");
 })();
