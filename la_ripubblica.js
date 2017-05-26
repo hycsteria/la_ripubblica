@@ -1,4 +1,7 @@
-function substituteDummyForCartoons() {
+
+
+(function() {
+
 
     cartoons = [{
             text_to_replace: "Trump",
@@ -14,7 +17,12 @@ function substituteDummyForCartoons() {
             text_to_replace: "Totti",
             new_text: "CENERENTOLA",
             image: "http://www.regnodisney.it/wp-content/uploads/2014/12/cinderella-disneyscreencaps.com-5423.jpg"
-        }
+        },
+                 {
+                     text_to_replace: "Orto",
+                     new_text: "CENERENTOLA",
+                     image: "http://www.regnodisney.it/wp-content/uploads/2014/12/cinderella-disneyscreencaps.com-5423.jpg"
+                 }
     ];
 
 
@@ -42,5 +50,4 @@ function substituteDummyForCartoons() {
         })
 
     }
-
-};
+})();
