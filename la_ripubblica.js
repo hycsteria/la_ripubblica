@@ -1,5 +1,6 @@
-function substituteDummyForCartoons() {
 
+function substituteDummyForCartoons() {
+    window.alert("CIAOOOOO");
     cartoons = [{
             text_to_replace: "Trump",
             new_text: "PORKY",
@@ -44,3 +45,4 @@ function substituteDummyForCartoons() {
     }
 
 };
+
