@@ -18,11 +18,11 @@
             new_text: "CENERENTOLA",
             image: "http://www.regnodisney.it/wp-content/uploads/2014/12/cinderella-disneyscreencaps.com-5423.jpg"
         },
-                 {
-                     text_to_replace: "Orto",
-                     new_text: "CENERENTOLA",
-                     image: "http://www.regnodisney.it/wp-content/uploads/2014/12/cinderella-disneyscreencaps.com-5423.jpg"
-                 }
+         {
+             text_to_replace: "Papa",
+             new_text: "CENERENTOLA",
+             image: "http://www.regnodisney.it/wp-content/uploads/2014/12/cinderella-disneyscreencaps.com-5423.jpg"
+         }
     ];
 
     var count_substitution = 0;
@@ -55,5 +55,7 @@
 
     }
 
+    //Display how many articles you RIpublished
     jQuery(".hp-update").text("YEAAAH! Hai rIpubblicato " + i + " articoli!!");
+    $(".hp-update").css("font-size", "18px");
 })();
